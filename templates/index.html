@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+        <!--reference to custom css-->
+        <link href="static/styles.css" rel="stylesheet">
+
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+
+        <title>
+            Getting Ready for ISNA Huffaz Category
+        </title>
+
+    </head>
+    <body>
+        <header>
+            Random Ayah Generator for ISNA Huffaz
+        </header>
+
+
+        <main>
+            <div class="ayah">
+                {% if juz %}
+                    {{ ayah }}
+                <br>
+
+                <div style="font-size: 2vh;">
+
+                    <a style="color: #350E21; text-decoration: underline;" href="{{ link }}" target="_blank">{{ info }}</a>
+
+                </div>
+
+                {% endif %}
+            </div>
+
+            <form action="/" method="get">
+                <button type="submit" >Generate Random Ayah</button>
+                <input min=1 max=30 autofocus autocomplete="off" name="juz_num" placeholder="Juz #" type="number">
+            </form>
+        </main>
+
+
+        <footer>
+            Copyright &#169; Muslims :)
+        </footer>
+
+    </body>
+</html>
