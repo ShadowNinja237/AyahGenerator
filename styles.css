@@ -1,0 +1,86 @@
+header {
+    text-align: center;
+    font-size: min(35px, 4.5vw);
+    font-weight: 700;
+    margin-top: 27vh;
+    margin-bottom: 4vh;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    text-align: center;
+    color: white;
+    background-image: url("/static/image (3).png");
+
+}
+
+.ayah {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+    padding: 2vh 1vw 1vh 1vw;
+
+    border-radius: 10px;
+    width: 50%;
+    min-width: 400px;
+
+    background-color: white;
+    font-size: 4vh;
+    color: #350E21;
+}
+
+main {
+    position: relative;
+    min-height: 100%;
+}
+
+footer {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 20px;
+}
+
+input {
+    color: #350E21;
+    text-align: right;
+    border-color: #350E21;
+    border-radius: 20px;
+    width: 4vw;
+    min-width: 60px;
+}
+
+button {
+    padding: 10px 1vw;
+    height: 7vh;
+    border-radius: 10px;
+
+    position: relative;
+    left: 50%; /*moves the element 50% of its own width to the right.*/
+    transform: translateX(-50%); /*moves the element horizontally by -50% of its own width*/
+
+    text-align: center; /* Align text horizontally */
+    display: flex; /* Use flexbox for vertical alignment */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+
+    background-color: white;
+    color: #350E21;
+    font-size: 2vh;
+}
+
+button:hover {
+    background-color: lightgrey;
+}
+
+button:active {
+    background-color: grey;
+}
